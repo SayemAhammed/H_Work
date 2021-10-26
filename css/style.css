@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Zen+Kurenaido&display=swap');
+    *{
+        font-family: 'Zen Kurenaido', sans-serif;
+        margin: 0%;
+    }
+    a{
+        text-decoration: none;
+    }
+    nav{
+        background-color:#562eff; 
+        width: 100%;
+        
+    }
+    nav ul{
+    
+        text-align: center;
+         
+           
+    }
+    nav ul li{
+        display:inline-block;
+        line-height: 40px;
+        margin: 0 5px; 
+       
+        
+    }
+    nav ul li a{
+        color:#fff;
+        padding: 7px 13px;
+        border-radius: 20px;
+        text-transform: uppercase;
+        font-weight: bold;
+        
+       
+    }
+    .all{
+        display: flex;
+        justify-content:space-around ;
+        background-color:#562eff;
+        padding: 10px;
+
+    }
+    .logo-side{
+        display: flex;
+    }
+    .logo{
+       margin-right: 10px;
+       width: 30px; 
+       height: 40px;
+       display: flex;
+    }
+    .idea{
+      color: #fff;
+      font-size: 25px;
+      font-weight: bold;
+	
+    }
+   .manu-bar{
+    display: flex;
+    }
+    .menu-player{
+    width: 50px;
+    height: 50px;
+    }
+    h2{
+        color: #562eff;
+        display: flex;
+        margin: 0% 18%;
+        }
+    .main-container{
+        display: flex;
+        justify-content: space-evenly;
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-row-gap: 20px;
+    }
+    .top-players{
+        display: flex;
+        text-decoration-style: center;
+    }
+    .players-img{
+       width: 45px;
+       height: 45px;
+    }
+    .player-name{
+        padding-left: 10px;
+    }
+    .main-container-blog{
+        display: flex;
+        justify-content: space-evenly;
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-row-gap: 20px;
+
+    }
+    .top-blog{
+        display: flex;
+        text-decoration-style: center;
+    }
+    .blog-img{
+        width: 150px;
+        height: auto;
+    }
+    .blog-name{
+        padding-left: 10px;
+    }
+    .title{
+        text-transform: capitalize;
+        font-size: 20px;
+    }
+    .broker{
+        color: gray;
+    }
+    hr{
+        margin: 0% 18%;
+        color: rgba(128, 128, 128, 0.404);
+    }
