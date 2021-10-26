@@ -33,6 +33,9 @@
         
        
     }
+    body{
+        background-color: #f3f1ff;
+    }
     .all{
         display: flex;
         justify-content:space-around ;
@@ -62,14 +65,21 @@
     width: 50px;
     height: 50px;
     }
+    .full-player{
+        width: 65%;
+        height: auto;
+        margin: auto;
+        margin-top: 2%;
+        background-color: #fff;
+        padding: 2%;
+    }
     h2{
         color: #562eff;
         display: flex;
-        margin: 0% 18%;
         }
     .main-container{
         display: flex;
-        justify-content: space-evenly;
+        justify-content: space-between;
         display: grid;
         grid-template-columns: auto auto auto;
         grid-row-gap: 20px;
@@ -87,7 +97,7 @@
     }
     .main-container-blog{
         display: flex;
-        justify-content: space-evenly;
+        justify-content: space-between;
         display: grid;
         grid-template-columns: auto auto;
         grid-row-gap: 20px;
