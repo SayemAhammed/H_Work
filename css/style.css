@@ -86,7 +86,6 @@
     }
     .top-players{
         display: flex;
-        text-decoration-style: center;
     }
     .players-img{
        width: 45px;
@@ -105,23 +104,44 @@
     }
     .top-blog{
         display: flex;
-        text-decoration-style: center;
     }
     .blog-img{
-        width: 150px;
+        width: 180px;
         height: auto;
     }
     .blog-name{
         padding-left: 10px;
     }
-    .title{
+    .h4-title{
         text-transform: capitalize;
-        font-size: 20px;
+        font-size: 25px;
     }
     .broker{
         color: gray;
     }
     hr{
-        margin: 0% 18%;
+        margin: 0% 1%;
         color: rgba(128, 128, 128, 0.404);
     }
+    .full-course{
+        width: 65%;
+        height: auto;
+        margin: auto;
+        margin-top: 2%;
+        background-color: #fff;
+        padding: 2%;
+    }
+    .top-course{
+        border-radius: 13px;
+        width: 230px;
+        padding: 5px;
+        transition: 0.5s;
+    }
+    .top-course:hover {
+        box-shadow: 0 8px 16px 0 rgb(126, 123, 123);
+    }
+    .course-img{
+        width: 230px;
+        height: auto;
+    }
+    
