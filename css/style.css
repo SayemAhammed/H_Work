@@ -161,4 +161,14 @@
     .coppyright-text{
         text-align: center;
     }
+    .rating{
+        display: flex;
+        justify-content: space-between;    
+    }
+    .btn{
+        background-color: #ffe4e8;
+        color: #ff4a60;
+        border-radius: 10px;
+        border: none;
+    }
     
