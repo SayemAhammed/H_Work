@@ -131,6 +131,10 @@
         background-color: #fff;
         padding: 2%;
     }
+    .primary-course{
+        display: flex;
+        justify-content: space-between;
+    }
     .top-course{
         border-radius: 13px;
         width: 230px;
@@ -143,5 +147,18 @@
     .course-img{
         width: 230px;
         height: auto;
+    }
+    .checked{
+        color: rgb(255, 187, 0);
+    }
+    .checked-1{
+        color:rgba(128, 128, 128, 0.568);
+    }
+    .mentor{
+        color: red;
+        font-size: 10px;
+    }
+    .coppyright-text{
+        text-align: center;
     }
     
