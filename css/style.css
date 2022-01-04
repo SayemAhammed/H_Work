@@ -2,6 +2,8 @@
     *{
         font-family: 'Zen Kurenaido', sans-serif;
         margin: 0%;
+        padding: 0;
+        box-sizing: border-box;
     }
     a{
         text-decoration: none;
@@ -35,6 +37,12 @@
     }
     body{
         background-color: #f3f1ff;
+    }
+    p{
+        text-align: center;
+        font-size: 14px;
+        padding: 2px;
+        margin-top: 0px;
     }
     .all{
         display: flex;
@@ -104,6 +112,10 @@
     }
     .top-blog{
         display: flex;
+        justify-content: space-between;
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-row-gap: 20px;
     }
     .blog-img{
         width: 180px;
@@ -114,13 +126,13 @@
     }
     .h4-title{
         text-transform: capitalize;
-        font-size: 25px;
+        font-size: 20px;
     }
     .broker{
         color: gray;
     }
     hr{
-        margin: 0% 1%;
+        margin: 0% 0%;
         color: rgba(128, 128, 128, 0.404);
     }
     .full-course{
@@ -134,6 +146,9 @@
     .primary-course{
         display: flex;
         justify-content: space-between;
+        grid-template-columns: repeat(3, 1fr);
+        grid-auto-rows: auto;
+        grid-gap: 1rem;
     }
     .top-course{
         border-radius: 13px;
@@ -145,7 +160,7 @@
         box-shadow: 0 8px 16px 0 rgb(126, 123, 123);
     }
     .course-img{
-        width: 230px;
+        width: 100%;
         height: auto;
     }
     .checked{
@@ -153,6 +168,9 @@
     }
     .checked-1{
         color:rgba(128, 128, 128, 0.568);
+    }
+    .course-name{
+        font-size: 20px;
     }
     .mentor{
         color: red;
@@ -165,10 +183,73 @@
         display: flex;
         justify-content: space-between;    
     }
-    .btn{
+    #btn-1{
         background-color: #ffe4e8;
         color: #ff4a60;
-        border-radius: 10px;
+        border-radius: 05px;
         border: none;
     }
+    #btn-2{
+        background-color: #ffe4e8;
+        color: #ff4a60;
+        border-radius: 05px;
+        border:none;
+    }
+    #btn-3{
+        background-color: #ffe4e8;
+        color: #ff4a60;
+        border-radius: 05px;
+        border:none;
+    }
+    .footer{
+        position: relative;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: rgb(10, 10, 20);
+        padding: 10px 0;
+        text-align: center;
+        height: auto;
+        width: 100vw;
+        font-family: "Open Sans";
+        color: #fff;
+    }
+    .footer-content{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+    }
+    .socials{
+        list-style: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 1rem 0 3rem 0;
+    }
+    .socials li{
+        margin: 0 10px;
+    }
+    .socials a{
+        text-decoration: none;
+        color: #fff;
+    }
+    .socials a i{
+        font-size: 1.1rem;
+        transition: color .4s ease;
     
+    }
+    .socials a:hover i{
+        color: #00f7eb;
+    }
+    .footer p{
+        font-size: 14px;
+        word-spacing: 2px;
+        text-transform: capitalize;
+    }
+    .footer span{
+        text-transform: uppercase;
+        opacity: .4;
+        font-weight: 200;
+    }

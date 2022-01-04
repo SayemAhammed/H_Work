@@ -6,9 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>idea.com</title>
+    <title>idea.com | Sayem</title>
 </head>
-<body><!-- body part start -->
+<body>
 <!-- header part start -->
 <header class="">
 
@@ -38,7 +38,7 @@
          </nav>
         </div>
         <div>
-            <img src="images/icons/profile.png" class="menu-player">
+            <img class="menu-player" src="images/icons/profile.png">
         </div>
         </div>
 
@@ -128,7 +128,7 @@
         <div class="top-course">
             <img class="course-img" src="images/courses/course-1.png" alt="">
             <div class="course-name">
-                <h4><span>React - The Complete<br>Guide 2020</span> <br><a href="https://www.udemy.com/course/react-the-complete-guide-incl-redux/" class="mentor" target="_blank">Reed Krakoff.</a></h4>
+                <h4><span>React - The Complete<br>Guide 2020</span> <br><a href="https://www.udemy.com/course/react-the-complete-guide-incl-redux/" class="mentor" target="_blank">Reed Krakoff</a></h4>
             </div>    
             <div class="rating">
                 <div>
@@ -138,35 +138,95 @@
                     <span class="fa fa-star-half-full checked"></span>
                     <span class="fa fa-star checked-1"></span>
                 </div>
-                <p>4.3</p>
+                <p>3.5</p>
                 <div>
-                    <button class="btn"><i class="fa fa-clock-o"> 01:30 hr </i></button>
+                    <p id="btn-1">
+                        <script>
+                            // Set the date we're counting down to
+                            var countDownDate = new Date("Nov 07, 2022 23:37:25").getTime();
+                            
+                            // Update the count down every 1 second
+                            var x = setInterval(function() {
+                            
+                              // Get today's date and time
+                              var now = new Date().getTime();
+                                
+                              // Find the distance between now and the count down date
+                              var distance = countDownDate - now;
+                                
+                              // Time calculations for days, hours, minutes and seconds
+                              var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                              var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                              var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+                                
+                              // Output the result in an element with id="demo"
+                              document.getElementById("btn-1").innerHTML = hours + "h "
+                              + minutes + "m " + seconds + "s ";
+                                
+                              // If the count down is over, write some text 
+                              if (distance < 0) {
+                                clearInterval(x);
+                                document.getElementById("btn-1").innerHTML = "EXPIRED";
+                              }
+                            }, 1000);
+                            </script>
+                    </p>
                 </div>
             </div> 
         </div>
         <div class="top-course">
             <img class="course-img" src="images/courses/course-2.png" alt="">
             <div class="course-name">
-                <h4><span>Powerpoint 2020<br>Master Powerpoint Cour</span> <br><a href="https://www.udemy.com/course/react-the-complete-guide-incl-redux/" class="mentor" target="_blank">Walter Scott</a></h4>
+                <h4><span>Powerpoint 2020<br>Master Powerpoint Course</span> <br><a href="https://en.wikipedia.org/wiki/Walter_Scott" class="mentor" target="_blank">Walter Scott</a></h4>
             </div>
             <div class="rating">
                 <div>
                     <span class="fa fa-star checked"></span>
                     <span class="fa fa-star checked"></span>
                     <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
                     <span class="fa fa-star-half-full checked"></span>
-                    <span class="fa fa-star checked-1"></span>
                 </div>
-                <p>4.3</p>
+                <p>4.5</p>
                 <div>
-                    <button class="btn"><i class="fa fa-clock-o"> 01:20 hr </i></button>
+                    <p id="btn-2">
+                        <script>
+                            // Set the date we're counting down to
+                            var countDownDate = new Date("Nov 07, 2022 23:37:25").getTime();
+                            
+                            // Update the count down every 1 second
+                            var x = setInterval(function() {
+                            
+                              // Get today's date and time
+                              var now = new Date().getTime();
+                                
+                              // Find the distance between now and the count down date
+                              var distance = countDownDate - now;
+                                
+                              // Time calculations for days, hours, minutes and seconds
+                              var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                              var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                              var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+                                
+                              // Output the result in an element with id="demo"
+                              document.getElementById("btn-2").innerHTML = hours + "h "
+                              + minutes + "m " + seconds + "s ";
+                                
+                              // If the count down is over, write some text 
+                              if (distance < 0) {
+                                clearInterval(x);
+                                document.getElementById("btn-2").innerHTML = "EXPIRED";
+                              }
+                            }, 1000);
+                            </script>
+                    </p>
                 </div>
             </div>    
         </div>
         <div class="top-course">
             <img class="course-img" src="images/courses/course-3.png" alt="">
             <div class="course-name">
-                <h4><span>The Complete JavaScript<br>Course 2020</span> <br><a href="https://www.udemy.com/course/react-the-complete-guide-incl-redux/" class="mentor" target="_blank">Reed Krakoff.</a></h4>
+                <h4><span>The Complete JavaScript<br>Course 2020</span> <br><a href="https://en.wikipedia.org/wiki/John_Wick" class="mentor" target="_blank">John wick</a></h4>
             </div> 
             <div class="rating">
                 <div>
@@ -176,19 +236,59 @@
                     <span class="fa fa-star-half-full checked"></span>
                     <span class="fa fa-star checked-1"></span>
                 </div>
-                <p>4.5</p>
+                <p>3.5</p>
                 <div>
-                    <button class="btn"><i class="fa fa-clock-o"> 01:30 hr </i></button>
+                    <p id="btn-3">
+                        <script>
+                            // Set the date we're counting down to
+                            var countDownDate = new Date("Nov 07, 2022 23:37:25").getTime();
+                            
+                            // Update the count down every 1 second
+                            var x = setInterval(function() {
+                            
+                              // Get today's date and time
+                              var now = new Date().getTime();
+                                
+                              // Find the distance between now and the count down date
+                              var distance = countDownDate - now;
+                                
+                              // Time calculations for days, hours, minutes and seconds
+                              var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                              var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                              var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+                                
+                              // Output the result in an element with id="demo"
+                              document.getElementById("btn-3").innerHTML = hours + "h "
+                              + minutes + "m " + seconds + "s ";
+                                
+                              // If the count down is over, write some text 
+                              if (distance < 0) {
+                                clearInterval(x);
+                                document.getElementById("btn-3").innerHTML = "EXPIRED";
+                              }
+                            }, 1000);
+                            </script>
+                    </p>
                 </div>
             </div>   
         </div>
     </div>
     </section><!-- Latest course end -->
-    <br>
-<footer> <!-- footer part start -->
-    <p class="coppyright-text">&copy; Copyright by Tanvir Sayem</p>
-</footer> <!-- footer part end -->
 </main>
 <!-- main part end -->
-</body> <!-- body part end -->
+<br><br>
+<!-- footer part start -->
+<footer class="footer">
+        <p>Copyright &copy;2021 by Asraful | all rights reserved | <span>Secret Motions</span></p>
+        <ul class="socials">
+            <li><a href="https://www.facebook.com/secretmotionsofficials/" target="_blank"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="https://twitter.com/search4asraful/"  target="_blank"><i class="fa fa-twitter"></i></a></li>
+            <li><a href="https://www.youtube.com/channel/UCF7YKf6PX-4DfOSHm0aaOmQ?sub_confirmation=1" target="_blank"><i class="fa fa-youtube"></i></a></li>
+            <li><a href="https://www.plus.google.com/login/" target="_blank"><i class="fa fa-google-plus"></i></a></li>
+            <li><a href="https://www.linkedin.com/login/" target="_blank"><i class="fa fa-linkedin-square"></i></a></li>
+        </ul>
+</footer>
+<!-- footer part end -->
+
+</body>
 </html>
